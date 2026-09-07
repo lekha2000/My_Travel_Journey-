@@ -18,44 +18,6 @@
       line-height: 1.45;
     }
 
-    /* ---------- Header & nav ---------- */
-    header {
-      /* background: linear-gradient(90deg,#0f1724 0%, #15324a 100%); */
-      color: #2c3e50;
-      /* padding: 28px 16px; */
-      text-align: center;
-      margin: 1rem 0;
-      line-height: 1.6;
-      font-weight: bold; 
-      /* box-shadow: 0 4px 18px rgba(8,15,25,0.15); */
-    }
-    header h1 { font-size: 1.9rem; letter-spacing: 0.2px; margin-bottom: 6px; }
-    header p { opacity: 0.85; font-size: .95rem; margin-top: 6px; }
-
-    nav {
-      display:flex;
-      justify-content:center;
-      /* flex-wrap:wrap;
-      gap:10px;
-      padding:12px 10px; */
-      background:#34495e;
-      gap: 1.5rem;
-      padding: 12px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      font-weight: bold; 
-    }
-    nav a {
-      color:#e6eef8;
-      text-decoration:none;
-      padding:8px 12px;
-      border-radius:8px;
-      font-weight:600;
-      font-size:0.94rem;
-    }
-    nav a:hover { background: rgba(255,255,255,0.04); }
-
     /* ---------- Page container ---------- */
     main {
       max-width: 1200px;
@@ -174,14 +136,17 @@
 </head>
 <body class="travel-page">
 
-  <header>
+  <header class="hero">
     <h1>Places Visited</h1>
+    <p>Explore the destinations and memories from my travels.</p>
   </header>
 
-  <nav aria-label="Main navigation">
+  <nav class="topnav" aria-label="Main navigation">
     <a href="Home.html">Home</a>
-    <a href="UpdatedPlaces.html">Short Version</a>
-    <a href="NewPlaces.html" aria-current="page">Long Version</a>
+    <a href="Favthings.html">Favourite Things</a>
+    <a href="UpdatedPlaces.html">Places</a>
+    <a href="NewPlaces.html" aria-current="page">Detailed Version</a>
+    <a href="TravelMap.html">Travel Map</a>
   </nav>
 
   <main>
@@ -204,11 +169,12 @@
             <div class="details-content">
               <p class="tagline">Major cities & highlights</p>
               <p class="places-list">
-                <b>Jaipur (The Pink City):</b> Birla Auditorium, Albert Hall Museum, Hawa Mahal, Jal Mahal, City Palace, Amer Fort, Jantar Mantar, Nahargarh Fort, Jaigarh Fort, Birla Mandir, Bapu Bazaar.<br>
+                <b>Jaipur (The Pink City):</b> Birla Auditorium, Albert Hall Museum, Hawa Mahal, Jal Mahal, City Palace, Amer Fort, Jantar Mantar, Nahargarh Fort, Jaigarh Fort, Birla Mandir, Bapu Bazaar, Patrika Gate, Jaipur Wax Museum.<br>
                 <b>Jodhpur (The Blue City):</b> Jaswant Thada, Mehrangarh Fort, Rai ka Bag Palace, Umaid Bhawan Palace, Mehrangarh Fort Museum.<br>
                 <b>Ajmer & Pushkar:</b> Ajmer Sharif Dargah, Brahma Temple, Pushkar Lake.<br>
                 <b>Udaipur (The Palace City):</b> City Palace, Lake Palace, Jag Mandir, Saheliyon-ki-Bari, Moti Magri.<br>
-                <b>Jaisalmer (The Golden City):</b> Jaisalmer Fort, Jain heritage sites, Lodhurva, Bada Bagh, Jaisalmer War Museum, Gadisar Lake, Kuldhara (haunted village).
+                <b>Jaisalmer (The Golden City):</b> Jaisalmer Fort, Jain heritage sites, Lodhurva, Bada Bagh, Jaisalmer War Museum, Gadisar Lake, Jaisal Desert Safari, Kuldhara (haunted village).<br>
+                <b>Additional Jaipur & Udaipur highlights:</b> Patrika Gate, Jaipur Wax Museum, Pichola Lake, Jagmandir Island Palace.
               </p>
             </div>
           </details>
@@ -232,7 +198,9 @@
                 <b>Gurdaspur:</b> Tibri Cantt, Shri Pindori Dham Temple, Dera Baba Nanak Gurdwara, India-Pak Border BSF Outpost.<br>
                 <b>Amritsar:</b> Golden Temple (Harmandir Sahib), Jallianwala Bagh, Maharaja Ranjit Singh Museum, Wagah Border, shopping for Phulkari cloth & Amritsari jutti.<br>
                 <b>Jalandhar:</b> Devi Talab Mandir, Rangla Punjab Haveli, Tulsi Mandir, Shaheed-E-Azam Museum.<br>
-                <b>Chandigarh:</b> Sukhna Lake, Nek Chand's Rock Garden, Pinjore Rose Garden, International Dolls Museum, Nada Sahib Gurudwara, Sector 22 Market, Cactus Garden.
+                <b>Chandigarh:</b> Sukhna Lake, Nek Chand's Rock Garden, Pinjore Rose Garden, International Dolls Museum, Nada Sahib Gurudwara, Sector 22 Market, Cactus Garden.<br>
+                <b>Amritsar & border:</b> Partition Museum, Gobindgarh Fort, Sadda Pind, Shri Durgiana Temple, Attari-Wagah Border and border viewpoints.<br>
+                <b>Gurdaspur:</b> Pandori Dham and Dera Baba Nanak.
               </p>
             </div>
           </details>
@@ -253,11 +221,13 @@
             <div class="details-content">
               <p class="tagline">Notable towns & treks</p>
               <p class="places-list">
+                <b>Shimla & Kufri:</b> Shimla and Kufri viewpoints.<br>
+                <b>Yulla Kanda:</b> Lord Krishna Temple, Yulla Khas and Shree Jal Naagh Ji Temple.<br>
                 <b>Kasaol:</b> Monkey Point, Mall Road, Gilbert Trail, Christ (Anglican) Church.<br>
-                <b>Kangra:</b> Kangra Devi Temple, Jwala Mata Temple, Chintapurni Temple, Chamunda Devi, Baijnath Temple.<br>
+                <b>Kangra:</b> Kangra Fort, Kangra Art Museum, Brijeshwari Devi Temple, Kangra Devi Temple, Jwala Mata Temple, Chintapurni Temple, Chamunda Devi, Baijnath Temple.<br>
                 <b>Kullu & Manali:</b> Rohtang Pass, Manikaran Sahib, Solang Valley, Hidimba Temple, Vashisht Hot Water Spring & Temple, Roerich Museum, Tibetan Monastery, Basheshwar Mahadev Temple.<br>
                 <b>Dharamshala / McLeod Ganj:</b> Dalai Lama Temple Complex, Naddi Hill, Tsuglag Khang, Dal Lake, Tea Gardens, Dharamshala Cricket Stadium, St John in the Wilderness, War Memorial, Gyuto & Namgyal monasteries, Kalachakra Temple.<br>
-                <b>Chamba:</b> Dalhousie, Chowari, Khajjiar.
+                <b>Chamba:</b> Dalhousie, Chowari, Khajjiar, Gandhi Chowk.
               </p>
             </div>
           </details>
@@ -277,7 +247,7 @@
             <summary>Full places visited</summary>
             <div class="details-content">
               <p class="places-list">
-                <b>Delhi:</b> India Gate, Qutub Minar, Humayun's Tomb, Palki Bazaar, Akshardham Temple, Lotus Temple, Red Fort, Chandni Chowk, Indira Gandhi House, Rashtrapati Bhavan, Birla Mandir, Rajghat, Nehru Memorial Museum.<br>
+                <b>Delhi:</b> India Gate, Qutub Minar, Humayun's Tomb, Palki Bazaar, Akshardham Temple, Lotus Temple, Red Fort, Chandni Chowk, Indira Gandhi House, Rashtrapati Bhavan, Birla Mandir, Rajghat, Nehru Memorial Museum, Mayur Vihar Extension, Moti Bagh Gurudwara Nanakpura.<br>
                 <b>Agra:</b> Taj Mahal, Agra Fort, Tomb of Akbar the Great, Fatehpur Sikri.<br>
                 <b>Mathura & Vrindavan:</b> Sri Krishna Janmabhoomi, Dwarkadhish Temple, Gita Mandir, Sri Radhavallabh Vrindavan Temple.
               </p>
@@ -300,7 +270,7 @@
             <div class="details-content">
               <p class="places-list">
                 <b>Jammu:</b> Vaishno Devi (Katra).<br>
-                <b>Srinagar & Kashmir Valley:</b> Shankaracharya Hill, Dal Lake (houseboats), Nigeen Lake, Mughal Gardens, Betaab Valley, Doodhpathri, Aru Valley, Pahalgam, Gulmarg (gondola), Sonamarg.<br>
+                <b>Srinagar & Kashmir Valley:</b> Shankaracharya Hill, Dal Lake (houseboats), Nigeen Lake, Mughal Gardens, Betaab Valley, Doodhpathri, Aru Valley, Pahalgam, Baisaran Valley, Lidder Valley, Lidder Amusement Park, Gulmarg (gondola), Sonamarg.<br>
                 <b>Activities:</b> Shikara rides, houseboat stays, gondola cable car (Gulmarg), valley sightseeing.
               </p>
             </div>
@@ -347,7 +317,8 @@
               <p class="places-list">
                 <b>Prayagraj (Allahabad):</b> Triveni Sangam, Jai Shree Ram Temple, Sita Samadhi Sthal.<br>
                 <b>Varanasi (Banaras):</b> Ganga Aarti at Dashashwamedh/Assi, Kashi Vishwanath Temple, BHU area, Vishwanath Temple, Varahi Devi, Durga Kund, Sankat Mochan, Tulsi Manas Mandir, Baba Kal Bhairav, Annapurna Temple.<br>
-                <b>Sarnath:</b> Buddhist shrines and Tibetan monastery.
+                <b>Sarnath:</b> Buddhist shrines and Tibetan monastery.<br>
+                <b>Noida & NH-58 route:</b> Botanical Garden, Sakoti and the NH-58 route.
               </p>
             </div>
           </details>
@@ -371,6 +342,7 @@
                 <b>Cafés & food:</b> The Little Buddha Cafe, So Hum Cafe, The 60's Cafe, Chotiwala Restaurant, Shambala Cafe.<br>
                 <b>Adventure:</b> Himalayan Bungee (117m), Himalayan Swing (113m).<br>
                 <b>Haridwar:</b> Har Ki Pauri, Mansa Devi, Chandi Devi, Bharat Mata Mandir, Shri Ram Datt Mandir.<br>
+                <b>Kedarnath route:</b> Kedarnath and Shri Kedarnath Jyotirlinga Temple, Gaurikund Jeep Stand, Gaurikund Temple, Gaurikund Hot Water Spring, Sonprayag Bus Stand, Jungle Chatti, Bhimbali, Rambara, Lincholi, Bheem Shila, Hans Kund, Meetha Pani Waterfall, New Mandakini Bridge, Mandakini river viewpoints, Adi Shankaracharya Statue, Shri Bhairavnath Mandir, Kedarnath temple viewpoints, Kedarnath Trekking Way and Guptkashi.
                 <b>Tunganath / Chopta region:</b> Devprayag, Rudraprayag, Dhari Devi, Tunganath trek, Deoria Tal trek, Chandrashila Peak, Omkareshwar Temple.
               </p>
             </div>
@@ -404,7 +376,8 @@
                 <b>Dhondenling Tibetan area:</b> Tibetan mountain statue, Dzogchen Monastery, Tana Monastery.<br>
                 <b>Dandeli & Dudhsagar area:</b> Adventure camps, white-water activities, Dudhsagar Falls (note: Dudhsagar is on Goa/Karnataka border).<br>
                 <b>Belagavi:</b> Kapileshwar, Gokak Falls, Belgaum Fort, Suvarna Vidhana Soudha, Malaprabha Dam, Badami caves nearby, etc.<br>
-                <b>Coorg (Kodagu):</b> Mandalpatti, Abbey Falls, Plantation tours, Raja's Seat, Nisargadhama, Namdroling Monastery (Golden Temple).
+                <b>Coorg (Kodagu):</b> Madikeri, Mandalpatti, Abbey Falls, Abbi Falls, Plantation tours, Raja's Seat, Mathanda Aiyappa viewpoint, Nisargadhama Tourist Center at Kushalnagar, Kyatanamakki Hill Station, Omkareshwara Swamy Temple, Namdroling Monastery (Golden Temple).<br>
+                <b>Hubballi & Bengaluru:</b> Hubballi, New Cotton Market, Hubballi Junction, Kempegowda International Airport.
                 <br>Hampi - Thungabadhra Dam, Kukke-Bisile View-Dharmasthala-Sringeri-Horanadu, Sakaleshpura Trip and EthinaBhuja Trek, Kodachadri Trek, Shivgange Hill Trek, Gangadikal Trek, Avala betta trek. Chalkere-Chitradurga, Netravathi Trek.
               </p>
             </div>
@@ -468,6 +441,7 @@
             <div class="details-content">
               <p class="places-list">
                 <b>Madurai:</b> Meenakshi Amman Temple (gopurams).<br>
+                <b>Yercaud:</b> Yercaud Lake, Lady's Seat, Gents Seat, Children's Seat, Pagoda View Point, Shevaroyan Temple, Rose Garden, Veeran Vanjinathan Falls.<br>
                 <b>Kodaikanal:</b>Silver Cascade Waterfall, Bear Shola Falls Pathway, Fairy Falls, Upper Lake View Point, Moir Point, Pine Forest, Kodaikanal Golf Club, La Salette Church, Coaker’s Walk, Bryant Park, Kodai Lake, Dolphin’s Nose Trek, Green Valley Viewpoint, Pillar Rocks, Guna Cave, Palani Hill.<br>
                 <b>Vellor:</b>Vellor Golden Temple<br>
                 <b>Ooty - Conoor:</b>Elephant Feeding center - Theppakadu, Bandipur Tiger reserve, Masinagudi - Mudhumalai, toy train, Doddabetta Peak, Benchmark Tea Factory - chocolate & Tea Museum,  Lovedale, Rose Garden, Botanical Garden, Pine Forest, Shooting point, Pykara Dam.  
@@ -492,8 +466,33 @@
             <div class="details-content">
               <p class="places-list">
                 <b>Lepakshi:</b> Veerabhadra Swamy Temple, Lepakshi Nandi, temple complex and Jatayu references.<br>
-                <b>Tirupati:</b> Tirupati Balaji (Sri Venkateswara) pilgrimage area, Mallappa Konda hills.<br>
-                <b>Gandikota & surrounds:</b> Gandikota gorge, Juma Mosque, Belum Caves (nearby), Horsley Hills (region).
+                <b>Tirupati:</b> Tirupati Balaji (Sri Venkateswara) pilgrimage area, Alipiri Mettu, ISKCON Temple, Sri Govindaraja Swamy Temple, Mallappa Konda hills.<br>
+                <b>Gandikota & surrounds:</b> Gandikota gorge, Juma Mosque, Belum Caves (nearby).<br>
+                <b>Horsley Hills:</b> Horsley Hill Zoo and viewpoints.<br>
+                <b>Mantralayam:</b> Raghavendra Swamy sites.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Telangana -->
+      <article class="card" id="telangana">
+        <div class="card-media">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg" alt="Charminar in Hyderabad">
+        </div>
+        <div class="card-body">
+          <div class="card-title"><span>Telangana</span><span class="muted">Heritage & city experiences</span></div>
+          <div class="card-sub">Historic monuments, temples, lakes and modern Hyderabad.</div>
+
+          <details>
+            <summary>Full places visited</summary>
+            <div class="details-content">
+              <p class="places-list">
+                <b>Hyderabad:</b> Charminar, Makkah Masjid, Golconda Fort, Golconda Watch Tower, Qutb Shahi Tombs, Banjara Hills, Jubilee Hills, HITEC City and Hotel Shadab.<br>
+                <b>Hussain Sagar:</b> Hussain Sagar boating point, Hussain Sagar viewpoint, Tank Bund, Buddha Statue and Telangana Amarula Smarakam.<br>
+                <b>Temples & cultural sites:</b> Birla Temple, Shri Jagannatha Swami Temple, Ramoji Film City, Telangana State Tourism Information Center and Nimrah Cafe & Bakery.<br>
+                <b>Yadadri & Bhuvanagiri:</b> Sri Lakshmi Narasimha Swamy Devasthanam (Yadagirigutta), Vaikunta Narayana Mahadwaram, Sri Jala Narayana Swami Sannidhi, Swarnagiri Sree Venkateswara Swamy Devasthanam and Brahma Ratham.
               </p>
             </div>
           </details>
@@ -559,12 +558,12 @@
             <summary>Full places visited</summary>
             <div class="details-content">
               <p class="places-list">
-                <b>Guwahati  : </b>Maa Kamakhya Temple. <br>
-                <b>Shillong  : </b>Tree house, Umium Lake, Police Bazar, Ward's Lake, Center Point, Laitlum Canyons, Mawryngknerg.<br>
+                <b>Guwahati  : </b>Maa Kamakhya Temple, Kamakhya viewpoints, Saraighat Bridge, Lokpriya Gopinath Bordoloi International Airport. <br>
+                <b>Shillong  : </b>Tree house, Umiam Lake, Umiam Dam, Police Bazar, Ward's Lake, Center Point, Laitlum Canyons, Mawryngknerg.<br>
                 <b>Jowai  : </b>Phe Phe Falls, Mawpat.<br>
-                <b>Dwaki  : </b>Umngot Rivier, Water Adventure, Shnongpdeng, Indo - Bangladesh Border, Borhill Falls. <br>
+                <b>Dawki  : </b>Umngot River, Dawki Bridge, Water Adventure, Shnongpdeng Suspension Bridge, Shnongpdeng, Myntdu river area, Indo - Bangladesh Border, Bangladesh View Point, Borhill Falls. <br>
                 <b>Nongeitniang  : </b>Mawlynnong, Aisa's Cleanest Village, Riwai Village, Riwai Trek.<br>
-                <b>Cherrapunjee  : </b>Tyran Village, Single Decker Bridge Trek, Double Decker Brideg Trek, Nongriat, Blue Lagoon, Nohkalikai Falls, 7 Sisters falls, Mawsmai Caves, Garden of Caves, Khasi culture, Wei Sawdong. <br>
+                <b>Cherrapunjee  : </b>Tyrna Village, Single Decker Bridge Trek, Double Decker Bridge Trek, Nongriat, Blue Lagoon, Rainbow Falls, Nohkalikai Falls, 7 Sisters falls, Phe Phe Falls, Mawsmai Caves, Garden of Caves, Khasi culture, Wei Sawdong. <br>
               </p>
             </div>
           </details>
@@ -579,5 +578,18 @@
     <!-- <div class="small muted" style="margin-top:8px">This page is a modernized, responsive rework of your original HTML table — all places you shared are included.</div> -->
   </footer>
 
+  <script>
+    document.querySelectorAll('.card').forEach((card) => {
+      card.addEventListener('click', (event) => {
+        if (event.target.closest('summary')) {
+          return;
+        }
+
+        card.querySelectorAll('details[open]').forEach((details) => {
+          details.open = false;
+        });
+      });
+    });
+  </script>
 </body>
 </html>

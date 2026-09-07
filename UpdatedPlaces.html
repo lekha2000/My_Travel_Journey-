@@ -14,56 +14,6 @@
       line-height: 1.6;
     }
 
-    h1 {
-      text-align: center;
-      margin: 1rem 0;
-      color: #2c3e50;
-    }
-
-    /* Navbar */
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      background: #34495e;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #f39c12; }
-
-    /* Match the original detailed travel-page header and navigation sizing. */
-    header {
-      color: #2c3e50;
-      text-align: center;
-      margin: 1rem 0;
-      line-height: 1.6;
-      font-weight: bold;
-    }
-    header h1 {
-      font-size: 1.9rem;
-      letter-spacing: 0.2px;
-      margin-bottom: 6px;
-    }
-    nav {
-      gap: 1.5rem;
-      padding: 12px;
-      font-weight: bold;
-    }
-    nav a {
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.94rem;
-    }
-
     /* Card Layout */
     .places-container {
       display: grid;
@@ -109,13 +59,16 @@
   </style>
 </head>
 <body class="travel-page">
-  <header>
+  <header class="hero">
     <h1>Places Visited</h1>
+    <p>Explore the destinations and memories from my travels.</p>
   </header>
-  <nav aria-label="Main navigation">
+  <nav class="topnav" aria-label="Main navigation">
     <a href="Home.html">Home</a>
-    <a href="UpdatedPlaces.html" aria-current="page">Short Version</a>
-    <a href="NewPlaces.html">Long Version</a>
+    <a href="Favthings.html">Favourite Things</a>
+    <a href="UpdatedPlaces.html" aria-current="page">Places</a>
+    <a href="NewPlaces.html">Detailed Version</a>
+    <a href="TravelMap.html">Travel Map</a>
   </nav>
 
   <div class="places-container">
@@ -124,11 +77,8 @@
       <img src="https://media.istockphoto.com/id/481776206/photo/cityscape-of-blue-city-and-mehrangarh-fort-jodhpur-india.jpg?s=612x612&w=0&k=20&c=UppFuMxnGOacUJMdsU5sOznTkAZ9VB8SI9usuDr0n7A=" alt="Rajasthan">
       <div class="card-content">
         <h2>Rajasthan</h2>
-        <p>Jaipur (Hawa Mahal, Amer Fort, City Palace, Bapu Bazzar)<br>
-        Jodhpur (Mehrangarh Fort, Umaid Bhawan Palace)<br>
-        Ajmer & Pushkar (Ajmer Sharif Dargah, Brahma Temple)<br>
-        Udaipur (City Palace, Lake Palace, Jag Mandir)<br>
-        Jaisalmer (Golden Fort, Gadisar Lake, Kuldhara).</p>
+        <p>Jaipur, Jodhpur, Ajmer, Pushkar, Udaipur and Jaisalmer.<br>
+        Highlights: Hawa Mahal, Amer Fort, City Palace, Mehrangarh Fort, Pushkar Lake, Pichola Lake, Jaisalmer Fort and Kuldhara.</p>
       </div>
     </div>
 
@@ -137,10 +87,8 @@
       <img src="https://media.istockphoto.com/id/535570117/photo/golden-temple-in-amritsar-punjab-india.jpg?s=612x612&w=0&k=20&c=TAgZK64Qz6YsljOK1rXZrrW1u1YSlb9e_YBEmm2pfBw=" alt="Punjab">
       <div class="card-content">
         <h2>Punjab</h2>
-        <p>Amritsar (Golden Temple, Wagah Border, Jallianwala Bagh)<br>
-        Jalandhar (Devi Talab Mandir, Rangla Punjab Haveli)<br>
-        Chandigarh (Rock Garden, Sukhna Lake, Cactus Garden)<br>
-        Gurdaspur (Dera Baba Nanak, BSF Border Outpost).</p>
+        <p>Amritsar, Jalandhar, Gurdaspur, Attari-Wagah Border and Chandigarh.<br>
+        Highlights: Golden Temple, Jallianwala Bagh, Partition Museum, Gobindgarh Fort, Devi Talab Mandir, Rock Garden and Sukhna Lake.</p>
       </div>
     </div>
 
@@ -149,11 +97,8 @@
       <img src="https://media.istockphoto.com/id/493794018/photo/the-golden-temple-of-the-namdroling-nyingmapa-monastery.jpg?s=612x612&w=0&k=20&c=oY9DOC87ZU_MBSo9bS6Qwq8qKVR1k37GJGpaB-cycOM=" alt="Himachal Pradesh">
       <div class="card-content">
         <h2>Himachal Pradesh</h2>
-        <p>Kasauli (Mall Road, Christ Church)<br>
-        Kangra (Kangra Devi Temple, Chamunda Devi)<br>
-        Kullu & Manali (Rohtang Pass, Solang Valley, Hidimba Temple)<br>
-        Dharamshala (McLeod Ganj, Dalai Lama Temple, Cricket Stadium)<br>
-        Dalhousie, Khajjiar.</p>
+        <p>Shimla, Kufri, Kasauli, Kangra, Kullu-Manali, Dharamshala and Dalhousie.<br>
+        Highlights: Yulla Kanda, Rohtang Pass, Solang Valley, Hidimba Temple, McLeod Ganj, Kangra Fort and Khajjiar.</p>
       </div>
     </div>
 
@@ -162,9 +107,8 @@
       <img src="https://media.istockphoto.com/id/635726296/photo/taj-mahal-in-agra-india.jpg?s=612x612&w=0&k=20&c=WoRD1QzoLxpMyBxRVCUwNrnQJTfIzoN8KNxxx1FSroA=" alt="Delhi and Agra">
       <div class="card-content">
         <h2>Delhi & Agra</h2>
-        <p>Delhi (India Gate, Qutub Minar, Red Fort, Lotus Temple, Akshardham, Chandni Chowk)<br>
-        Agra (Taj Mahal, Agra Fort, Fatehpur Sikri)<br>
-        Mathura-Vrindavan (Sri Krishna Janmabhoomi, Dwarkadhish Temple).</p>
+        <p>Delhi, Agra and Mathura-Vrindavan.<br>
+        Highlights: India Gate, Qutub Minar, Red Fort, Akshardham, Taj Mahal, Agra Fort and Sri Krishna Janmabhoomi.</p>
       </div>
     </div>
 
@@ -173,10 +117,8 @@
       <img src="https://media.istockphoto.com/id/665366534/photo/gandola-cable-car-in-gulmarg.jpg?s=612x612&w=0&k=20&c=15HVHYGv3e0AVTLI5B1W1RzIVAOsiAXvqFgfsbVsJYg=" alt="Jammu And Kashmir">
       <div class="card-content">
         <h2>Jammu & Kashmir</h2>
-        <p>Jammu (Vaishno Devi Temple)<br>
-        Srinagar (Dal Lake, Shankaracharya Hill)<br>
-        Gulmarg (Gondola Ride)<br>
-        Sonamarg, Pahalgam, Betaab Valley, Houseboats on Dal Lake.</p>
+        <p>Jammu, Srinagar, Gulmarg, Pahalgam and Sonamarg.<br>
+        Highlights: Vaishno Devi, Dal Lake, Shankaracharya Hill, Gulmarg Gondola, Baisaran Valley and Betaab Valley.</p>
       </div>
     </div>
 
@@ -185,9 +127,8 @@
       <img src="https://media.istockphoto.com/id/483961593/photo/beautiful-landscape-in-norther-part-of-india.jpg?s=612x612&w=0&k=20&c=L0CTWx3YIwJpbPkYoJLKe7aUSn5BO9TpzjbK_gVdbHY=" alt="Ladakh">
       <div class="card-content">
         <h2>Ladakh</h2>
-        <p>Leh (Shanti Stupa, Leh Palace, Hall of Fame Museum)<br>
-        Pangong Lake, Nubra Valley, Khardung La Pass, Magnetic Hill, Sangam (Indus & Zanskar Rivers)<br>
-        Monasteries: Hemis, Thiksey, Pathar Sahib Gurudwara.</p>
+        <p>Leh, Pangong Lake and Nubra Valley.<br>
+        Highlights: Shanti Stupa, Leh Palace, Hall of Fame, Khardung La, Hemis Monastery, Thiksey Monastery and the Indus-Zanskar confluence.</p>
       </div>
     </div>
 
@@ -196,9 +137,8 @@
       <img src="https://as2.ftcdn.net/v2/jpg/04/08/25/05/1000_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg" alt="Varanasi">
       <div class="card-content">
         <h2>Uttar Pradesh</h2>
-        <p>Prayagraj (Triveni Sangam, Sita Samadhi Sthal)<br>
-        Varanasi (Kashi Vishwanath Temple, Ganga Aarti, Assi Ghat, Sankat Mochan)<br>
-        Sarnath (Buddha Shrines, Tibetan Monastery).</p>
+        <p>Prayagraj, Varanasi, Sarnath and Noida.<br>
+        Highlights: Triveni Sangam, Kashi Vishwanath Temple, Ganga Aarti, Assi Ghat, Sarnath Buddhist sites and Botanical Garden.</p>
       </div>
     </div>
 
@@ -207,9 +147,8 @@
       <img src="https://media.istockphoto.com/id/1044399860/photo/ganga-arthi-in-the-holy-city-of-rishikesh-in-uttarakhand-india-to-worship-river-ganga-ganges.jpg?s=612x612&w=0&k=20&c=699WoUWUOKCVzRWOG1mT1dMD7kqQWsQ76-37a_ws5BA=" alt="Rishikesh">
       <div class="card-content">
         <h2>Uttarakhand</h2>
-        <p>Rishikesh (Ram Jhula, Laxman Jhula, Beatles Ashram, Ganga Aarti)<br>
-        Haridwar (Har Ki Pauri, Chandi Devi, Mansa Devi)<br>
-        Chopta-Tunganath (Chandrashila Peak, Deoria Tal Trek).</p>
+        <p>Rishikesh, Haridwar, Kedarnath and Chopta-Tunganath.<br>
+        Highlights: Ram Jhula, Ganga Aarti, Har Ki Pauri, Kedarnath Temple, Gaurikund, Sonprayag and Chandrashila Peak.</p>
       </div>
     </div>
 
@@ -218,10 +157,8 @@
       <img src="https://media.istockphoto.com/id/181371125/photo/bangalore-palace.jpg?s=612x612&w=0&k=20&c=Zp3t195um3NTu9JYJo7mpnU3koR0PZS8JU_VAhcTnNw=" alt="Karnataka">
       <div class="card-content">
         <h2>Karnataka</h2>
-        <p>Bangalore (Palace, Lalbagh, Nandi Hills)<br>
-        Mysore (Mysore Palace, Brindavan Gardens, Chamundi Hill)<br>
-        Hampi, Coorg (Abbey Falls, Raja’s Seat)<br>
-        Udupi, Gokarna, Jog Falls, Chikkamagaluru (Mullayanagiri).</p>
+        <p>Bengaluru, Mysuru, Hampi, Coorg, Udupi, Gokarna and Chikkamagaluru.<br>
+        Highlights: Bangalore Palace, Lalbagh, Nandi Hills, Mysore Palace, Abbey Falls, Raja's Seat, Jog Falls and Mullayanagiri.</p>
       </div>
     </div>
 
@@ -230,9 +167,8 @@
       <img src="https://media.istockphoto.com/id/539018660/photo/taj-mahal-hotel-and-gateway-of-india.jpg?s=612x612&w=0&k=20&c=L1LJVrYMS8kj2rJKlQMcUR88vYoAZeWbYIGkcTo6QV0=" alt="Mumbai">
       <div class="card-content">
         <h2>Mumbai</h2>
-        <p>Gateway of India, Taj Hotel, Marine Drive, Elephanta Caves, Siddhivinayak Temple<br>
-        Nashik (Shirdi Sai Baba Temple)<br>
-        Kolhapur (Mahalakshmi Temple).</p>
+        <p>Mumbai, Nashik and Kolhapur.<br>
+        Highlights: Gateway of India, Marine Drive, Elephanta Caves, Siddhivinayak Temple, Shirdi Sai Baba Temple and Mahalakshmi Temple.</p>
       </div>
     </div>
 
@@ -241,8 +177,8 @@
       <img src="https://media.istockphoto.com/id/157579910/photo/the-beach.jpg?s=612x612&w=0&k=20&c=aMk67AmzIVD_S1Nibww8ytUdyub2ck3HNQ3uTvuPWPI=" alt="Goa">
       <div class="card-content">
         <h2>Goa</h2>
-        <p>North Goa (Baga, Calangute, Anjuna Beach, Aguada Fort, Basilica of Bom Jesus)<br>
-        South Goa (Palolem, Agonda, Butterfly Beach).</p>
+        <p>North Goa and South Goa.<br>
+        Highlights: Baga, Calangute, Anjuna, Aguada Fort, Basilica of Bom Jesus, Palolem, Agonda and Butterfly Beach.</p>
       </div>
     </div>
 
@@ -251,10 +187,8 @@
       <img src="https://media.istockphoto.com/id/179524020/photo/inside-of-meenakshi-temple.jpg?s=612x612&w=0&k=20&c=HJ1p5ehUONOpdV2KArAmQwgqCipsCqb-luYwGM68NUs=" alt="Tamil Nadu">
       <div class="card-content">
         <h2>Tamil Nadu</h2>
-        <p>Madurai (Meenakshi Temple)<br>
-        Kodaikanal (Pillar Rocks, Coaker’s Walk, Kodai Lake)<br>
-        Ooty & Coonoor (Botanical Garden, Tea Museum, Doddabetta Peak)<br>
-        Vellore (Golden Temple).</p>
+        <p>Madurai, Yercaud, Kodaikanal, Ooty, Coonoor and Vellore.<br>
+        Highlights: Meenakshi Temple, Yercaud Lake, Lady's Seat, Coaker's Walk, Kodai Lake, Doddabetta Peak and Vellore Golden Temple.</p>
       </div>
     </div>
 
@@ -263,9 +197,21 @@
       <img src="https://media.istockphoto.com/id/480812368/photo/gandikota.jpg?s=612x612&w=0&k=20&c=8zxcvrmOelWYwq5XpuFlVGIZouCUM5gFIobeJIQmmk8=" alt="Andhra Pradesh">
       <div class="card-content">
         <h2>Andhra Pradesh</h2>
-        <p>Lepakshi (Veerabhadra Temple, Nandi Statue)<br>
-        Tirupati (Balaji Temple)<br>
-        Gandikota (Belum Caves, Horsley Hills, Juma Mosque).</p>
+        <p>Lepakshi, Tirupati, Gandikota, Horsley Hills and Mantralayam.<br>
+        Highlights: Veerabhadra Temple, Tirupati Balaji, Alipiri Mettu, Belum Caves, Gandikota Gorge, Horsley Hill Zoo and Raghavendra Swamy sites.</p>
+      </div>
+    </div>
+
+    <!-- Telangana -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg" alt="Charminar in Hyderabad">
+      <div class="card-content">
+        <h2>Telangana</h2>
+        <p>Hyderabad (Charminar, Makkah Masjid, Golconda Fort, Qutb Shahi Tombs)<br>
+        Hussain Sagar (Buddha Statue, Tank Bund, boating)<br>
+        Birla Temple, HITEC City, Banjara Hills<br>
+        Ramoji Film City<br>
+        Yadadri (Lakshmi Narasimha Swamy Temple), Bhuvanagiri and Swarnagiri.</p>
       </div>
     </div>
 
@@ -274,10 +220,8 @@
       <img src="https://media.istockphoto.com/id/1266651692/photo/houseboat-in-alappuzha-backwaters-kerala.jpg?s=612x612&w=0&k=20&c=G432lmdUz9qrW6D4sZYxLe6K-Km85OEmZg0qpcGyRCI=" alt="Kerala">
       <div class="card-content">
         <h2>Kerala</h2>
-        <p>Trivandrum (Padmanabhaswamy Temple)<br>
-        Varkala (Beaches, Cliffs)<br>
-        Wayanad (Chembra Peak, Edakkal Caves, Banasura Sagar Dam)<br>
-        Jatayu Earth Center.</p>
+        <p>Trivandrum, Varkala and Wayanad.<br>
+        Highlights: Padmanabhaswamy Temple, Varkala Cliff, Chembra Peak, Edakkal Caves, Banasura Sagar Dam and Jatayu Earth Center.</p>
       </div>
     </div>
 
@@ -286,10 +230,8 @@
       <img src="https://media.istockphoto.com/id/1134958124/photo/loh-samah-bay-phi-phi-island.jpg?s=612x612&w=0&k=20&c=hrMcs_uHKo0csqybrq1N1spKSL-UWr0XdWbejLWhd64=" alt="Andaman">
       <div class="card-content">
         <h2>Andaman & Nicobar</h2>
-        <p>Port Blair (Cellular Jail, Wandoor Beach)<br>
-        Ross Island (Ruins, Light & Sound Show)<br>
-        Havelock Island (Scuba Diving, Elephant Beach)<br>
-        Neil Island (Natural Coral Bridge, Bharatpur Beach).</p>
+        <p>Port Blair, Ross Island, Havelock Island and Neil Island.<br>
+        Highlights: Cellular Jail, Wandoor Beach, Ross Island ruins, Elephant Beach, scuba diving, Natural Coral Bridge and Bharatpur Beach.</p>
       </div>
     </div>
 
@@ -298,14 +240,8 @@
       <img src="Photos/IMG_0781.HEIC" alt="Meghalaya" loading="lazy">
       <div class="card-content">
         <h2>Assam - Meghalaya</h2>
-        <p>
-        Guwahati <br>
-        Shillong <br>
-        Jowai <br>
-        Dwaki <br>
-        Nongeitniang <br>
-        Cherrapunjee.<br>
-       </p>
+        <p>Guwahati, Shillong, Jowai, Dawki, Mawlynnong, Nongriat and Cherrapunji.<br>
+        Highlights: Kamakhya Temple, Umiam Lake, Laitlum Canyon, Umngot River, Mawlynnong, Double Decker Living Root Bridge, Nohkalikai Falls and Mawsmai Cave.</p>
       </div>
     </div>
   </div>
