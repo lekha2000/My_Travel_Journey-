@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Places Visited — Lekha Raju</title>
+  <link rel="stylesheet" href="StyleSheet.css">
 
   <style>
     /* ---------- Reset & base ---------- */
@@ -171,18 +172,16 @@
   }
   </style>
 </head>
-<body>
+<body class="travel-page">
 
   <header>
     <h1>Places Visited</h1>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="Home.html">Home</a>
-    <!-- <a href="Bestfriends.html">Bestfriends</a> -->
-    <!-- <a href="Places.html">Places</a> -->
     <a href="UpdatedPlaces.html">Short Version</a>
-    <a href="NewPlaces.html">Long Version</a>
+    <a href="NewPlaces.html" aria-current="page">Long Version</a>
   </nav>
 
   <main>
@@ -550,7 +549,7 @@
       <!-- Assam - Meghalaya -->
       <article class="card" id="andaman">
         <div class="card-media">
-          <img src="D:\Starmark\Full_Stack_Training-main\Basic HTML\Photos\IMG_0781.HEIC" alt="Andaman beaches">
+          <img src="Photos/IMG_0781.HEIC" alt="Andaman beaches" loading="lazy">
         </div>
         <div class="card-body">
           <div class="card-title"><span>Assam - Meghalaya</span><span class="muted">Scotland of the East</span></div>

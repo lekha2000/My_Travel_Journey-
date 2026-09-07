@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Places Visited</title>
+  <link rel="stylesheet" href="StyleSheet.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -37,6 +38,31 @@
       transition: color 0.3s;
     }
     nav a:hover { color: #f39c12; }
+
+    /* Match the original detailed travel-page header and navigation sizing. */
+    header {
+      color: #2c3e50;
+      text-align: center;
+      margin: 1rem 0;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      letter-spacing: 0.2px;
+      margin-bottom: 6px;
+    }
+    nav {
+      gap: 1.5rem;
+      padding: 12px;
+      font-weight: bold;
+    }
+    nav a {
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
 
     /* Card Layout */
     .places-container {
@@ -82,13 +108,13 @@
     }
   </style>
 </head>
-<body>
-  <h1>Places Visited</h1>
-  <nav>
+<body class="travel-page">
+  <header>
+    <h1>Places Visited</h1>
+  </header>
+  <nav aria-label="Main navigation">
     <a href="Home.html">Home</a>
-    <!-- <a href="Bestfriends.html">Bestfriends</a> -->
-    <!-- <a href="Places.html">Places</a> -->
-    <a href="UpdatedPlaces.html">Short Version</a>
+    <a href="UpdatedPlaces.html" aria-current="page">Short Version</a>
     <a href="NewPlaces.html">Long Version</a>
   </nav>
 
@@ -269,7 +295,7 @@
 
     <!-- Assam - Meghalaya -->
     <div class="card">
-      <img src="D:\Starmark\Full_Stack_Training-main\Basic HTML\Photos\IMG_0781.HEIC" alt="Meghalaya">
+      <img src="Photos/IMG_0781.HEIC" alt="Meghalaya" loading="lazy">
       <div class="card-content">
         <h2>Assam - Meghalaya</h2>
         <p>
